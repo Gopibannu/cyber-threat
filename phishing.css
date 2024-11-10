@@ -1,0 +1,157 @@
+/* Basic Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: white;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  animation: fadeIn 2s ease-in-out;
+}
+
+header {
+  text-align: center;
+  background-color: #444;
+  padding: 2rem;
+}
+
+header h1 {
+  color: cyan;
+  font-size: 2.5rem;
+  animation: slideInFromTop 1s ease-in-out;
+}
+
+header p {
+  color: cyan;
+  font-size: 1.2rem;
+}
+
+.header-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  animation: zoomIn 1.5s ease-in-out;
+}
+
+/* Section Styles */
+section {
+  padding: 2rem;
+  border-bottom: 2px solid #444;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: cyan;
+}
+
+ul, ol {
+  margin-left: 2rem;
+}
+
+button {
+  background-color: #00f2a1;
+  color: black;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: cyan;
+}
+
+/* Hidden by default */
+.hidden {
+  display: none;
+}
+
+/* Quiz Styles */
+#quiz-container {
+  margin-top: 2rem;
+  background-color: #333;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.quiz-question {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.quiz-options {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quiz-options li {
+  margin: 1rem 0;
+}
+
+.quiz-options li button {
+  background-color: #333;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #444;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quiz-options li button:hover {
+  background-color: cyan;
+}
+
+footer {
+  background-color: #444;
+  text-align: center;
+  padding: 1rem;
+  color: cyan;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Section Images */
+.section-img {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  animation: zoomIn 1.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+      transform: translateY(-50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+      transform: scale(0.8);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
